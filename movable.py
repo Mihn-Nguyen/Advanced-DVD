@@ -7,14 +7,14 @@ def resource_path(relative_path):
     try:
         base_path = sys._MEIPASS
     except AttributeError:
-        base_path = os.path.abspath("/Users/aaditya/Desktop/Coding/python/Projects/DVD")
+        base_path = os.path.abspath(".")
 
     return os.path.join(base_path, relative_path)
 
 SIZE = width, height = 1500, 800  # Can resize window
 BG_COLOR = (0, 0, 0)  # Background color in RGB
 
-logo = pygame.image.load("/Users/aaditya/Desktop/Coding/python/Projects/DVD/logo.png")
+logo = pygame.image.load("logo.png")
 original_width, original_height = logo.get_size()
 new_width = int(original_width * 0.2)
 new_height = int(original_height * 0.2)
