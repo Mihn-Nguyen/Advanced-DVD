@@ -4,7 +4,7 @@ import pygame
 SIZE = width, height = 1500, 800  # Can resize window
 BG_COLOR = (0, 0, 0)  # Background color in RGB
 
-logo = pygame.image.load('/Users/aaditya/Desktop/Coding/python/Projects/DVD/logo.png')
+logo = pygame.image.load('logo.png')
 logo = pygame.transform.scale(logo, (100, 50))
 img_size = logo.get_rect().size
 clock = pygame.time.Clock()
